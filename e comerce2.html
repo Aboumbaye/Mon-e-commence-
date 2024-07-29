@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            color: #555;
+        }
+        .product button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Mon E-commerce</h1>
+    </header>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Boutique</a>
+        <a href="#">Contact</a>
+        <a href="#">À propos</a>
+    </nav>
+    <div class="container">
+        <div class="product">
+            <img src="https://via.placeholder.com/100" alt="Produit 1">
+            <h3>Produit 1</h3>
+            <p>Prix: 20€</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/100" alt="Produit 2">
+            <h3>Produit 2</h3>
+            <p>Prix: 30€</p>
+            <button>Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/100" alt="Produit 3">
+            <h3>Produit 3</h3>
+            <p>Prix: 25€</p>
+            <button>Ajouter au panier</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mon E-commerce. Tous droits réservés.</p>
+    </footer>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.product button');
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Produit ajouté au panier !');
+            });
+        });
+    });
+</script>
+    
+    
+</body>
+</html>
